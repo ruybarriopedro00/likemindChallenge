@@ -1,0 +1,78 @@
+.btn__container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.btn {
+    color: $primary;
+    cursor: pointer;
+    border-radius: $border-circle;
+    font-weight: 600;
+    font-family: $font;
+
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+}
+
+.btn__text {
+    background-color: transparent;
+    border: 2px solid $primary;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    svg {
+        margin-right: 8px;
+    }
+}
+
+.btn__ts {
+    background-color: $white;
+    font-size: 11px;
+    position: absolute;
+    right: 1rem;
+    bottom: -12px;
+    height: 29px;
+    box-shadow: $box-shadow;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-left: 0.75rem;
+
+    .svg__container {
+        background-color: $secondary;
+        height: 20px;
+        width: 20px;
+        border-radius: $border-circle;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.5rem;
+    }
+}
+
+.share__container {
+    display: flex;
+
+    img {
+        margin-left: 1rem;
+    }
+
+    &.mobile {
+        background-color: $white;
+        justify-content: space-around;
+        width: 140px;
+        height: 36px;
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+        margin-top: -18px;
+
+        img {
+            margin: unset;
+        }
+    }
+}

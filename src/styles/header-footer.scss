@@ -1,0 +1,74 @@
+.navbar {
+    background-color: $primary;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 55px;
+
+    @include respond-to(mobile) {
+        justify-content: space-between;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 980px;
+        padding: 0 1rem;
+
+        .navbar__title {
+            z-index: 4;
+        }
+
+        .navbar__title a {
+            color: $white;
+            display: inline;
+            text-decoration: none;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .navbar__body {
+            display: inline-flex;
+            flex-direction: row;
+
+            div {
+                margin: 0.5rem;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $primary;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 225px;
+
+    .footer__body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        @include respond-to(mobile) {
+            flex-direction: column;
+            padding-bottom: 1rem;
+        }
+
+        div {
+            margin: 0.5rem;
+        }
+    }
+
+    .footer__title {
+        border-bottom: 5px solid $secondary;
+        padding-bottom: 2rem;
+    }
+}

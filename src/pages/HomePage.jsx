@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../styles/home.scss";
 import getQuotes from "../services/quotesService";
 import { useNavigate } from "react-router-dom";
 
@@ -12,11 +11,8 @@ const options = {
 };
 
 export const HomePage = () => {
-    // quotes es un estado, y setQuotes es lo que actualiza ese estado
     const [quotes, setQuotes] = useState();
     const [maxQuotesToShow, setMaxQuoteToShow] = useState(PAGINATION_BASE);
-    // useEffect ejecuta la función que tiene adentro cuando se renderice el componente
-    // (porque tiene un corchete vacío,  sino tendría otro comportamiento)
     useEffect(() => {
         const getQuotesAsync = async () => {
             const backendQuotes = await getQuotes();

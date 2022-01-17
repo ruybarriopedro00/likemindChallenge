@@ -10,8 +10,6 @@ export const Navigation = () => {
         <>
             <Navbar />
 
-            {/* A <Switch> looks through its children <Route>s and
-                renders the first one that matches the current URL. */}
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/detail" element={<DetailPage />} />
